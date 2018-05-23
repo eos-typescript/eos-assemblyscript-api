@@ -58,9 +58,9 @@ declare function eosio_assert(conditionptr: usize, errptr: usize);
 * The program throws an error and stops in case the action was not authenticated by the user's permissions.
 *
 */
-declare function require_auth(user: account_name): void;
+declare function require_auth(name: account_name): void;
 
-
+declare function require_auth2(name: account_name, permission_name permission);
 
 
 /*
