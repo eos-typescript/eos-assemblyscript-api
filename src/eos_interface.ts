@@ -60,7 +60,7 @@ declare function eosio_assert(conditionptr: usize, errptr: usize);
 */
 declare function require_auth(name: account_name): void;
 
-declare function require_auth2(name: account_name, permission_name permission);
+declare function require_auth2(name: account_name, permission: permission_name);
 
 
 /*
