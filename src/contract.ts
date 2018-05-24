@@ -1,11 +1,11 @@
 abstract class Contract  {
-        protected account_name _self;
+        protected _self: account_name;
 
         constructor (name: account_name){
-                _self = name;
+                this._self = name;
         }
 
         private getSelf(): account_name {
-                return _self;
+                return this._self;
 	}
 }
